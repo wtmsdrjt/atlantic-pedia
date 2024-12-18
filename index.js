@@ -2,14 +2,14 @@ const axios = require("axios");
 
 class AtlanticPedia {
   /**
-   * @param {string} apiKey - API Key Anda
+   * @param {string} apiKey - API Key
    **/
   constructor(apiKey) {
     this._apiKey = apiKey;
     this._endpoint = "https://atlantich2h.com";
   }
 
-  // Profile
+  // profile
   async getProfile() {
     try {
       const params = new URLSearchParams();
@@ -30,7 +30,7 @@ class AtlanticPedia {
     }
   }
 
-  // Transaksi
+  // transaksi
   async createTransaction(code, refId, target) {
     try {
       const params = new URLSearchParams();
@@ -100,7 +100,7 @@ class AtlanticPedia {
     }
   }
 
-  // Deposit
+  // deposit
   async createDeposit(reffId, nominal, type, method) {
     try {
       const params = new URLSearchParams();
